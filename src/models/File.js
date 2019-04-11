@@ -23,7 +23,7 @@ File.virtual('url').get(function(){
     return `${url}/files/${encodeURIComponent(this.path)}`;
 
 
-})
+});
 
     
 
