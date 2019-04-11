@@ -14,7 +14,7 @@ const io = require('socket.io')(server);
 io.on("connection", socket=>{
     socket.on('connectRoom', box=>{
         socket.join(box);
-    })
+    });
 });
 
 mongoose.connect('mongodb+srv://theusrsilva:Theus0703@cluster0-k4fak.mongodb.net/test?retryWrites=true',{
